@@ -11,9 +11,75 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient p-lg-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Hatter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link"    href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <img src="./source/img/my-img.jpg" alt="my-avatar">
+            <h1>Hi I'm Hatter</h1>
+            <p>and this is my website</p>
+        </header>
+        <section id="about" class="bg-dark text-light">
+            <div class="container">
+                <h2>About Me:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie tempor ante, et blandit leo placerat non. Aenean cursus sapien vel dui blandit dignissim. Etiam fringilla, dui in eleifend consectetur, neque justo sollicitudin felis, in condimentum odio risus sed sem. Donec dictum nisl justo, aliquet lobortis neque rutrum at. Suspendisse quis dolor sit amet purus convallis hendrerit ut id odio. Cras interdum id dolor ut fringilla. Pellentesque et orci venenatis felis venenatis mattis vitae nec elit.</p>
+            </div>
+        </section>
+        <section id="project" class="bg-secondary text-light bg-gradient">
+            <div class="container">
+                <h2>Project:</h2>
+                <div id="project-container">
+                    <div id="motivation-quote" class="project-item">
+                        <img src="source/img/project/motivation.png" class="project-img" alt="motivation quote mainpage picture">
+                        <a class="project-item-title" href="https://hatter-s.github.io/motivational_message_web/" target="_blank">Motivation Quote</a>
+                    </div>
+                    <div id="excurtion" class="project-item">
+                        <img src="./source/img/project/excurtion.png" alt="excurtion mainpage picture">
+                        <a class="project-item-title" href="https://hatter-s.github.io/excursion/" target="_blank">Excurtion</a>
+                    </div>
+                    <div id="company-home-page" class="project-item">
+                        <img src="./source/img/project/company_home_page.png">
+                        <a class="project-item-title" href="https://hatter-s.github.io/company_home_page/" target="_blank">Company Home Page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills:</h2>
+                <div class="icon-container">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-git"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-light">
+            <div class="container-fluid">
+                <p>Make by Hatter</p>
+            </div>
+        </footer>
+    </main>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c4a556ff31.js" crossorigin="anonymous"></script>
     <script src="./source/script/script.js"></script>
 </body>
 </html>

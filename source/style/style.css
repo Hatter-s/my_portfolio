@@ -1,0 +1,87 @@
+body {
+    background-color: rgba(256, 256, 256, 0.5);
+}
+h2 {
+    padding: 0.5em 0;
+}
+
+p {
+    margin: 0;
+}
+
+section {
+    padding: 1em 0;
+}
+/* NAV  */
+.navbar-brand {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+/* HEADER  */
+header {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+header img{
+    width: 300px;
+    border: black solid 1px;
+    border-radius: 50%;
+}
+
+/* PROJECT */
+#project-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.project-item {
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    text-align: center;
+    border: white solid 1px;
+    border-radius: 1px;
+    background-color: white;
+}
+.project-item-title {
+    text-decoration: none;
+    color:navy;
+    opacity: 0.7;
+}
+@media only screen  and (max-width: 480px) {
+    #project-container {
+        flex-flow: column;
+    }
+    .project-item {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+/* SKILLS */
+.icon-container {
+    display:flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.icon-container i {
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+/* FOOTER  */
+footer {
+    padding: 0.5em 0;
+    text-align: end;
+}
