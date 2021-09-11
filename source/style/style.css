@@ -67,6 +67,10 @@ header img{
         width: 100%;
         margin: 1em 0;
     }
+
+    .project-item img {
+        max-height: 200px;
+    }
 }
 /* SKILLS */
 .icon-container {
