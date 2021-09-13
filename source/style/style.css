@@ -145,6 +145,7 @@ header img{
     border-radius: 1px;
     background-color: white;
 }
+
 .project-item-title {
     text-decoration: none;
     color:navy;
@@ -179,4 +180,18 @@ header img{
 footer {
     padding: 0.5em 0;
     text-align: end;
+}
+
+@keyframes moveLeftAndComeBack {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-10%, -10%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
