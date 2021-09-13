@@ -1,0 +1,109 @@
+.contain {
+    width: 100%;
+    height: 400px;
+    align-items: center;
+}
+
+.trapezoid {
+    height: 150px;
+    z-index: 2;
+}
+.about {
+    width: 80%;
+    padding-left: 25px;
+}
+.twitter {
+    padding-left: 75px;
+    width: 20%;
+}
+.scale-1-4 .twitter {
+    padding-left: 50px;
+}
+.scale-1-4 .t2::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    border-top: 150px solid var(--bs-primary);
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 20%;
+}
+.scale-1-4 .t1::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    border-bottom: 150px solid var(--bs-dark);
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 80%;
+}
+
+.scale-5-5 .twitter {
+    width: 50%;
+}
+.scale-5-5 .about {
+    width: 50%;
+}
+.scale-5-5 .t2::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    border-top: 150px solid var(--bs-primary);
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 50%;
+}
+.scale-5-5 .t1::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    border-bottom: 150px solid var(--bs-dark);
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 50%;
+}
+
+.scale-3-7 .twitter {
+    width: 30%;
+}
+.scale-3-7 .about {
+    width: 70%;
+}
+.scale-3-7 .t2::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    border-top: 150px solid var(--bs-primary);
+    border-left: 25px solid transparent;
+    height: 0;
+    width: 30%;
+}
+.scale-3-7 .t1::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    border-bottom: 150px solid var(--bs-dark);
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 70%;
+}
+@media only screen and (max-width: 480px) {
+    .trapezoid {
+        height: 200px;
+    }
+    .twitter {
+        padding-left: 20px;
+    }
+    .t2::before {
+        border-top: 200px solid var(--bs-primary) !important;
+    }
+    .t1::before {
+        border-bottom: 200px solid var(--bs-dark) !important;
+    }
+}
